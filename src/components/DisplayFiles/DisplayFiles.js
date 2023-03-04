@@ -10,6 +10,7 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
 import DeleteFile from "./DeleteFile";
+import IsAdmin from "../IsAdmin/IsAdmin";
 
 export default function DisplayFiles(props) {
   
@@ -60,7 +61,7 @@ export default function DisplayFiles(props) {
                 <audio src={file.file_URL} type={"audio"} controls />
               </Box>
               </div>
-              <DeleteFile handleAllPodcasts={handleAllPodcasts}  fileId={file._id}/>
+             <IsAdmin><DeleteFile handleAllPodcasts={handleAllPodcasts}  fileId={file._id}/></IsAdmin> 
               <DisplayComment handleGetAllComments={handleGetAllComments} fileId={file._id}  comments={comments}  />
               <AddComment handleGetAllComments={handleGetAllComments} fileId={file._id} />
             </Box>

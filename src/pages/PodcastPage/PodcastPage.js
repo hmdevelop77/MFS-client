@@ -3,6 +3,7 @@ import { exampleService } from "../../services/example.service";
 import "./PodcastPage.css"
 import AddFile from '../../components/DisplayFiles/AddFile'
 import DisplayFile from '../../components/DisplayFiles/DisplayFiles'
+import IsAdmin from "../../components/IsAdmin/IsAdmin";
 
 export default function PodcastPage() {
   const [files, setFiles] = useState([]);
@@ -16,8 +17,10 @@ export default function PodcastPage() {
     handleGetAllPodcasts();
   }, []);
   return (
-    <div className='Podcast-Page'>Podcast Page
+    <div className='Podcast-Page'> Podcast Page
+    <IsAdmin>
     <AddFile handleGetAllPodcasts={handleGetAllPodcasts}   />
+   </IsAdmin>
     <DisplayFile files={files} handleGetAllPodcasts={handleGetAllPodcasts} />
     </div>
   )
