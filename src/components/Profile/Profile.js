@@ -78,7 +78,7 @@ console.log("password updated")
 
       <h1>Profile</h1>
 
-      <form onSubmit={handleChangeProfilSubmit}>
+      <form className="form-profile" onSubmit={handleChangeProfilSubmit}>
       <Box
           className="flex justify-center"
           sx={{
