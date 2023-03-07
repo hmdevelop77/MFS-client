@@ -39,7 +39,7 @@ export default function AddFile(props) {
         setFile(file_URL);
       }
 
-      async function handleSubmitForm(event) {
+       function handleSubmitForm(event) {
         event.preventDefault();
         handleFileSelect();
         props.handleGetAllPodcasts()
