@@ -41,10 +41,7 @@ export default function AddFile(props) {
 
       async function handleSubmitForm(event) {
         event.preventDefault();
-      
-    
-       
-        
+        handleFileSelect();
         props.handleGetAllPodcasts()
 
         alert("file uploaded")
