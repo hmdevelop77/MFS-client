@@ -17,6 +17,7 @@ import IsPrivate from "./components/IsPrivate/IsPrivate";
 import IsAnon from "./components/IsAnon/IsAnon";
 import PodcastPage from "./pages/PodcastPage/PodcastPage";
 import Sidebar from "./components/SideBar/SideBar";
+import SideBarApp from "./components/SideBar/SideBar";
 
 
 
@@ -26,14 +27,14 @@ function App() {
   return (
     <div className="App"> 
 
- <Homepage/>
+ <SideBarApp/>
       <Routes>
-        {/* <Route
+        <Route
           path="/"
           element={
               <Homepage />
           }
-        /> */}
+        />
 
         <Route
           path="/profile"

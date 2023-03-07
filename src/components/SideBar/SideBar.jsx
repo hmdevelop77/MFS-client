@@ -82,6 +82,7 @@ export default function SideBarApp() {
 
   return (
     <>
+     <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar position="fixed" open={open}>
         <Toolbar>
@@ -150,6 +151,7 @@ export default function SideBarApp() {
       <Main open={open}>
         <DrawerHeader />
       </Main>
+      </Box>
     </>
   );
 }
