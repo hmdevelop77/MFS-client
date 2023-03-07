@@ -24,25 +24,26 @@ export default function AddFile(props) {
         setDescription(event.target.value);
       }
     
-      function handleFileSelect(event) {
-        setFile(event.target.files[0]);
+     async function handleFileSelect() {
+         //1. Upload the file through the backend
+         const uploadData = new FormData();
+         uploadData.append("filename", file_URL);
+     
+         const response = await exampleService.uploadFile(uploadData);
+        
+         await exampleService.createFile({
+           title,
+           description,
+           file_URL: response.data.fileUrl,
+         });
+        setFile(file_URL);
       }
 
       async function handleSubmitForm(event) {
         event.preventDefault();
       
     
-        //1. Upload the file through the backend
-        const uploadData = new FormData();
-        uploadData.append("filename", file_URL);
-    
-        const response = await exampleService.uploadFile(uploadData);
        
-        await exampleService.createFile({
-          title,
-          description,
-          file_URL: response.data.fileUrl,
-        });
         
         props.handleGetAllPodcasts()
 

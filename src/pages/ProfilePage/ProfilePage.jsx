@@ -8,6 +8,7 @@ function ProfilePage() {
 
 return (
   <>
+  <h1>tis pro</h1>
     <Profile/>
   </>
 )
