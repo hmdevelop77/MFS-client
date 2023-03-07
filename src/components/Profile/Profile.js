@@ -224,7 +224,7 @@ console.log("password updated")
           </Box>
 
 
-
+{/* 
         <label>Name:</label>
         <input
           type="text"
@@ -253,7 +253,7 @@ console.log("password updated")
           onChange={handleChangePassword}
         />
 
-        <br></br>
+        <br></br> */}
 
         <button type="submit">Edit</button>
       </form>

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 import { AuthContext } from "../../context/auth.context";
 
@@ -67,10 +67,10 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   justifyContent: "flex-end",
 }));
 
-export default function Homepage() {
+export default function SideBarApp() {
   const { isLoggedIn, user, logOutUser } = useContext(AuthContext);
   const theme = useTheme();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -81,7 +81,7 @@ export default function Homepage() {
   };
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <>
       <CssBaseline />
       <AppBar position="fixed" open={open}>
         <Toolbar>
@@ -94,9 +94,7 @@ export default function Homepage() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
-            MFS
-          </Typography>
+          <Typography variant="h6" noWrap component="div"></Typography>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -130,7 +128,9 @@ export default function Homepage() {
               <MenuItem component={<Link to="/budget" />}> Budget</MenuItem>
               {isLoggedIn && (
                 <>
-                <MenuItem component={<Link onClick={logOutUser}/>}>Logout</MenuItem>
+                  <MenuItem component={<Link onClick={logOutUser} />}>
+                    Logout
+                  </MenuItem>
                   <MenuItem component={<Link to="/profile" />}>
                     {" "}
                     Profile
@@ -150,6 +150,6 @@ export default function Homepage() {
       <Main open={open}>
         <DrawerHeader />
       </Main>
-    </Box>
+    </>
   );
 }

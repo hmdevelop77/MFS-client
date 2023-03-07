@@ -12,13 +12,13 @@ function IsAdmin({ children }) {
   if (isLoading) {
     return <Loading />;
   }
-  console.log("test for admin",isAdmin)
+
   if (!isLoggedIn) {
     // If the user is not logged in navigate to the login page ❌
     return <Navigate to="/login" />;
   }
 
-  if (!user.admin) {
+  if (!isAdmin) {
     // If the user is not logged in navigate to the login page ❌
     return //"Your are not admin"
   }

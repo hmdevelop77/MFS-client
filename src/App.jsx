@@ -6,6 +6,7 @@ import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import SignupPage from "./pages/SignupPage/SignupPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import BudgetPage from "./pages/BudgetPage/BudgetPage"
+import Homepage from "./pages/HomePage/HomePage";
 
 
 
@@ -24,9 +25,16 @@ import Sidebar from "./components/SideBar/SideBar";
 function App() {
   return (
     <div className="App"> 
-<p>ddd</p>
- <Sidebar/>
+
+ <Homepage/>
       <Routes>
+        {/* <Route
+          path="/"
+          element={
+              <Homepage />
+          }
+        /> */}
+
         <Route
           path="/profile"
           element={
