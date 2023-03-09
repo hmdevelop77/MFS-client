@@ -1,0 +1,101 @@
+.introduction {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  background-color: rgb(24, 118, 210);
+}
+
+/* styles for screen sizes 600px and below */
+@media (max-width: 600px) {
+  .introduction {
+    flex-direction: column;
+  }
+}
+
+.text1 {
+  text-align: center;
+}
+.css-ag7rrr-MuiTypography-root {
+  margin: 10px;
+  padding: 50px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.334;
+  letter-spacing: 0em;
+}
+.css-o2w69a-MuiTypography-root {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 2.8rem;
+  line-height: 1.167;
+  letter-spacing: -0.01562em;
+}
+.title {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 72px;
+  margin: 0 0 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.paragraph {
+  color: #f8f8f8;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  margin: 0 0 24px;
+}
+
+
+
+/* CSS */
+.button-71 {
+    margin-top: 100px;
+  background-color: #fff;
+  border: 0;
+  border-radius: 56px;
+  color: #0078d0;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-71:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+.button-71:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .button-71 {
+    padding: 16px 48px;
+  }
+}

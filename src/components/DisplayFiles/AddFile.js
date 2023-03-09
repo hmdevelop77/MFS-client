@@ -32,8 +32,8 @@ export default function AddFile(props) {
        async function handleSubmitForm(event) {
         event.preventDefault();
         const uploadData = new FormData();
-        debugger
-        uploadData.append("filename", file_URL);
+
+         uploadData.append("filename", file_URL);
         const response = await exampleService.uploadFile(uploadData);
         
         await exampleService.createFile({
