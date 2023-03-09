@@ -76,8 +76,6 @@ console.log("password updated")
     <div className="max-w-screen-xl sm:mx-auto ">
       <div className="grid grid-cols-1 gap-8 row-gap-4 lg:grid-cols-2">
 
-      <h1>Profile</h1>
-
       <form className="form-profile" onSubmit={handleChangeProfilSubmit}>
       <Box
           className="flex justify-center"
@@ -255,12 +253,12 @@ console.log("password updated")
 
         <br></br> */}
 
-        <button type="submit">Edit</button>
+        <button className="button-71" type="submit">Edit</button>
       </form>
-
+     
       {errorMessage && <p className="error-message">{errorMessage}</p>}
       <form onSubmit={handleDeleteProfilSubmit}>
-        <button type="submit">Delete profile</button>
+        <button className="button-71" type="submit">Delete profile</button>
       </form>
     </div>
     </div>

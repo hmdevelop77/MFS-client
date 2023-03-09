@@ -9,6 +9,8 @@ import FirstImage from "../../3691910.jpg";
 import SecondImage from "../../economist_3.jpg"
 import { Link } from "react-router-dom";
 
+import IsAnon from "../../components/IsAnon/IsAnon";
+
 export default function Homepage() {
   return (
     <>
@@ -24,8 +26,9 @@ export default function Homepage() {
                 investing, budgeting, and more...
                 Whether you're a beginner or an experienced investor join us now.
               </p>
-             
+              <IsAnon>
               <a href="/signup"><button className="button-71" >Subscribe</button></a> 
+              </IsAnon>
             </CardContent>
           
           </Box>
@@ -50,7 +53,9 @@ export default function Homepage() {
               Take control of your finances and achieve your financial goals with our budget management tools.
               We helps you track your income, expenses, and savings.
               </p>
+              <IsAnon>
               <a href="/signup"><button className="button-71" >Subscribe</button></a> 
+              </IsAnon>
             </CardContent>
            
           </Box>
