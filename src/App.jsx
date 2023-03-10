@@ -16,8 +16,8 @@ import Homepage from "./pages/HomePage/HomePage";
 import IsPrivate from "./components/IsPrivate/IsPrivate";
 import IsAnon from "./components/IsAnon/IsAnon";
 import PodcastPage from "./pages/PodcastPage/PodcastPage";
-import Sidebar from "./components/SideBar/SideBar";
-import SideBarApp from "./components/SideBar/SideBar";
+// import Sidebar from "./components/SideBar/SideBar";
+import SideBarApp from "./components/SideBarApp/SideBarApp";
 
 
 
@@ -35,7 +35,6 @@ function App() {
               <Homepage />
           }
         />
-
         <Route
           path="/profile"
           element={
