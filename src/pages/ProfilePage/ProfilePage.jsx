@@ -1,14 +1,14 @@
 
 
 import Profile from "../../components/Profile/Profile";
-
+import "./ProfilePage.css"
 
 
 function ProfilePage() {
 
 return (
   <>
-  <h1>tis pro</h1>
+  <h1 className="title">Profile</h1>
     <Profile/>
   </>
 )

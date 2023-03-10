@@ -6,3 +6,43 @@
     padding-bottom: 8px;
     flex-direction: column;
 }
+.title{
+    color: #0078d0;
+	font-family: "Henny Penny", cursive;
+	margin: 20px;
+    padding: 20px;
+	letter-spacing: 0.0015em;
+	font-size: 5em;
+	text-shadow: 0 1px #8da1ff, -1px 0 #c0cbff, -1px 2px #8da1ff, -2px 1px #c0cbff,
+		-2px 3px #8da1ff, -3px 2px #c0cbff, -3px 4px #8da1ff, -4px 3px #c0cbff,
+		-4px 5px #8da1ff, -5px 4px #c0cbff, -5px 6px #8da1ff, -6px 5px #c0cbff,
+		-6px 7px #8da1ff, -7px 6px #c0cbff, -7px 8px #8da1ff, -8px 7px #c0cbff;
+	text-align: center;
+    
+}
+.description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #0078d0;
+    font-size: 1.2rem; /* sets the font size to 1.2 times the default size */
+    font-weight: bold; /* sets the font weight to bold */
+    line-height: 1.5; /* sets the line height to 1.5 times the font size */
+    text-align: justify; /* sets the text alignment to justified */
+    text-transform: uppercase; /* sets the text to uppercase */
+    letter-spacing: 0.1em; /* adds extra spacing between letters */
+    padding: 1rem; /* adds padding of 1rem around the element */
+  }
+  .subtitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: rgb(4, 89, 149);
+    font-size: 1.7rem; /* sets the font size to 1.2 times the default size */
+    font-weight: bold; /* sets the font weight to bold */
+    line-height: 1.5; /* sets the line height to 1.5 times the font size */
+    text-align: justify; /* sets the text alignment to justified */
+    text-transform: uppercase; /* sets the text to uppercase */
+    letter-spacing: 0.1em; /* adds extra spacing between letters */
+    padding: 1rem; /* adds padding of 1rem around the element */
+  }

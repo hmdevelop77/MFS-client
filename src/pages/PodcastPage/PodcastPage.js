@@ -17,7 +17,8 @@ export default function PodcastPage() {
     handleGetAllPodcasts();
   }, []);
   return (
-    <div className='Podcast-Page'> Podcast Page
+    <div className='Podcast-Page'>
+    <h1 className="title">Podcasts</h1>
     <IsAdmin>
     <AddFile handleGetAllPodcasts={handleGetAllPodcasts}   />
    </IsAdmin>
