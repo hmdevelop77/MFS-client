@@ -6,12 +6,13 @@ import ExpenseTotal from "../../components/Budget/ExpenseTotal";
 import ExpenseList from "../../components/Budget/ExpenseList";
 import AddExpenseForm from "../../components/Budget/AddExpenseForm";
 import { BudgetProvider } from "../../context/budget.context";
+import "./BudgetPage.css"
 
 export default function BudgetPage() {
   return (
     <BudgetProvider>
  <div className="container">
-      <h1 className="mt-3">My Budget</h1>
+      <h1 className="mt-3 title ">My Budget</h1>
       <div className="row mt-3">
         <div className="col-sm">
           <Budget />

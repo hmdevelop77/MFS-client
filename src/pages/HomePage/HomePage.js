@@ -13,14 +13,14 @@ import IsAnon from "../../components/IsAnon/IsAnon";
 
 export default function Homepage() {
 
-  
+
   return (
     <>
       <div className="introduction">
      <div className="text1">
           <Box sx={{ display: "flex", flexDirection: "column" }}>
             <CardContent sx={{ flex: "1 0 auto" }}>
-            <h1 className="title">
+            <h1 className="title12">
                 Join Our podcast
               </h1>
               <p className="paragraph" >
@@ -48,7 +48,7 @@ export default function Homepage() {
      <div className="text1">
           <Box sx={{ display: "flex", flexDirection: "column" }}>
             <CardContent sx={{ flex: "1 0 auto" }}>
-            <h1 className="title">
+            <h1 className="title12">
                 Set your budget
               </h1>
               <p className="paragraph" >
